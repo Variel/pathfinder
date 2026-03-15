@@ -3,6 +3,25 @@ name: pathfinder
 description: 한국 내 길찾기가 필요할 때 사용합니다. 자동차(카카오 모빌리티)와 대중교통(ODsay) 길찾기를 지원하며, 실시간/미래 교통 상황 기반의 경로 탐색, 소요 시간, 거리, 요금 정보를 제공합니다. 주소, 장소명, 좌표 모두 지원합니다.
 ---
 
+## 설치
+
+글로벌 설치:
+```
+npm install -g @unlimiting/pathfinder
+pnpm add -g @unlimiting/pathfinder
+yarn global add @unlimiting/pathfinder
+```
+
+설치 없이 바로 실행:
+```
+npx @unlimiting/pathfinder <command>
+pnpm dlx @unlimiting/pathfinder <command>
+```
+
+리포지토리: https://github.com/unlimiting-studio/pathfinder
+
+---
+
 Usage: pathfinder [options] [command]
 
 한국 길찾기 CLI (자동차 + 대중교통)
@@ -115,10 +134,3 @@ pathfinder dir -o "강남역" -d "서울역" --json | jq '.routes[0].summary'
 pathfinder pt -o "강남역" -d "서울역" --json | jq '.result.path[0].info'
 ```
 
-## 설치
-
-```
-npm install -g @unlimiting/pathfinder
-```
-
-리포지토리: https://github.com/unlimiting-studio/pathfinder
